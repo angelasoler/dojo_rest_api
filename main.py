@@ -13,12 +13,21 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+last_conselho = ""
+
 @app.get("/conselhos")
 async def root():
+    global last_conselho 
     dicas = 'DICAS'
     conselhos = []
 
     with open(dicas, 'r') as file:
         for line in file:
             conselhos.append(line.strip())
-    return {"message": random.choice(conselhos)}
+
+    novo_conselho = random.choice(conselhos)
+    while novo_conselho == last_conselho:
+        novo_conselho = random.choice(conselhos)
+
+    last_conselho = novo_conselho  
+    return {"message": novo_conselho}
