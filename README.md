@@ -1,7 +1,7 @@
 # Dojo rest api
 Feat Marcelo e Jhonatan
 
-# Sobre o que a gente estava falhando:
+## Sobre o que a gente estava falhando:
 - No lado da api apenas estavamos retornando a frase e no lado html estavamos esperando um objeto *JSON* com propriedade *message*
 - No lado do html, estavamos passando o end-point na raiz "/", porem no lado da API estavamos passando o endpoint "/conselhos"
 - Estava faltando configurar o CORS para ter as permissões
