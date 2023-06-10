@@ -1,8 +1,8 @@
 # Dojo rest api
-Feat Marcelo e Jhonatan
+Feat Marcelo e Marcos
 
 ## Sobre o que a gente estava falhando:
-- No lado da api apenas estavamos retornando a frase e no lado html estavamos esperando um objeto *JSON* com propriedade *message*
+- No lado da api apenas estavamos retornando a string sem nenhuma chave e no lado html estavamos esperando um objeto *JSON* com chave *message*
 - No lado do html, estavamos passando o end-point na raiz "/", porem no lado da API estavamos passando o endpoint "/conselhos"
 - Estava faltando configurar o CORS para ter as permissões
 - já deixe um loopinho mais bonito que pega as frases do arquivo, em dez de manualmente como estavamos fazendo :P
