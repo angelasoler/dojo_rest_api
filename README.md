@@ -5,7 +5,7 @@ Feat Marcelo e Marcos
 - No lado da api apenas estavamos retornando a string sem nenhuma chave e no lado html estavamos esperando um objeto *JSON* com chave *message*
 - No lado do html, estavamos passando o end-point na raiz "/", porem no lado da API estavamos passando o endpoint "/conselhos"
 - Estava faltando configurar o CORS para ter as permissões
-- já deixe um loopinho mais bonito que pega as frases do arquivo, em dez de manualmente como estavamos fazendo :P
+- já deixei um loopinho mais bonito que pega as frases do arquivo, em vez de manualmente como estavamos fazendo :P
 - e não aguentei a tentação de implementar que não repita o conselho anterior ._.
 
 ## Sobre configuração de CORS:
